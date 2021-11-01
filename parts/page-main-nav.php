@@ -1,26 +1,40 @@
-<header>
-	<nav class="navbar navbar-expand-lg fixed-top shadow" style="background: #fff;">
-		<div class="container">
-			<a class="navbar-brand" href="<?php echo get_home_url(); ?>" >
-				<img src="<?php echo get_home_url(); ?>/wp-content/uploads/" alt="" class="img-fluid">	
-			</a>
-			<button class="navbar-toggler rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#dmiNav" aria-controls="dmiNav" aria-expanded="false" aria-label="Toggle navigation">
-				<i class="fas fa-bars fa-2x"></i>
-			</button>
-			<div class="collapse navbar-collapse text-uppercase font-weight-bold" id="dmiNav">
-				<?php
-				wp_nav_menu( array(
-					'theme_location'    => 'primary',
-					'depth'             => 2,
-					'container'         => '',
-					'container_class'   => '',
-					'container_id'      => '',
-					'menu_class'        => 'navbar-nav ms-auto',
-					'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-					'walker'            => new WP_Bootstrap_Navwalker(),
-				)); ?>
-				
-			</div>
-		</div>
-	</nav>
-</header>
+  <div data-w-id="d1c05bb8-2c26-3bb0-5965-ac08c5bd3298" class="menu-wrapper">
+        <div class="menu-links-wrapper">
+          <a href="<?php echo get_home_url(); ?>" aria-current="page" class="menu-item-link w-inline-block w--current">
+            <div class="menu-item-text">Home</div>
+            <div class="menu-line-wrapper">
+              <div class="menu-line-gradient"></div>
+            </div>
+          </a>
+          <a href="services" class="menu-item-link w-inline-block">
+            <div class="menu-item-text">Services</div>
+            <div class="menu-line-wrapper">
+              <div class="menu-line-gradient"></div>
+            </div>
+          </a>
+          <a href="contact" class="menu-item-link w-inline-block">
+            <div class="menu-item-text">Contact</div>
+            <div class="menu-line-wrapper">
+              <div class="menu-line-gradient"></div>
+            </div>
+          </a>
+          <a href="about" class="menu-item-link w-inline-block">
+            <div class="menu-item-text">About</div>
+            <div class="menu-line-wrapper">
+              <div class="menu-line-gradient"></div>
+            </div>
+          </a>
+          <a href="leaderboard" class="menu-item-link w-inline-block">
+            <div class="menu-item-text">Leaderboard</div>
+            <div class="menu-line-wrapper">
+              <div class="menu-line-gradient"></div>
+            </div>
+          </a>
+          <a href="schedule-race" class="menu-item-link w-inline-block">
+            <div class="menu-item-text">Race Now</div>
+            <div class="menu-line-wrapper">
+              <div class="menu-line-gradient"></div>
+            </div>
+          </a>
+        </div>
+      </div>
